@@ -13,6 +13,40 @@ export default function TextForm(props) {
      let newText = text.toLowerCase(); 
      setText(newText)
    }
+
+   const handleSeClick = ()=>{
+    //sentence case
+    let text1= text.toLowerCase()
+    let newText = text1.charAt(0).toUpperCase() + text1.slice(1); 
+    setText(newText)
+  }
+
+  const handleAtClick = ()=>{
+    //atypical case
+    let newText = '';
+    for (let i = 0; i < text.length; i++) {
+        if (i % 2 === 0) {
+            newText += text[i].toLowerCase();
+        } else {
+            newText += text[i].toUpperCase();
+        }
+    }; 
+    setText(newText)
+  }
+  const handleCaClick = ()=>{
+    //capital case
+    let text1 = text.toLowerCase();
+    let newText = text1.replace(/\b\w/g, char => char.toUpperCase()); 
+    setText(newText)
+  }
+   const handleClClick = ()=>{
+    // clear case
+     let newText = ""; 
+     setText(newText)
+   }
+   
+   
+
   const handleOnChange = (event)=>{
     //console.log("On Change");
     setText(event.target.value);
@@ -26,8 +60,15 @@ export default function TextForm(props) {
          <div className="mb-3">
          <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows="8"></textarea>
          </div>
-         <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to UpperCase</button>
-         <button className="btn btn-primary mx-2" onClick={handleLoClick}>Convert to LowerCase</button>
+         <button className="btn btn-primary mx-1" onClick={handleUpClick}> UpperCase</button>
+         <button className="btn btn-primary mx-1" onClick={handleLoClick}> LowerCase</button>
+         <button className="btn btn-primary mx-1" onClick={handleSeClick}> SentenceCase</button>
+         <button className="btn btn-primary mx-1" onClick={handleCaClick}> CapitalizedCase</button>
+         <button className="btn btn-primary mx-1" onClick={handleAtClick}> aTyicalCase</button>
+
+         <button className="btn btn-primary mx-1" onClick={handleClClick}>Clear Text</button>       
+
+         
 
       </div>
       <div className="container my-3">
