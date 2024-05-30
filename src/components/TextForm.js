@@ -60,13 +60,13 @@ export default function TextForm(props) {
          <div className="mb-3">
          <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows="8"></textarea>
          </div>
-         <button className="btn btn-primary mx-1" onClick={handleUpClick}> UpperCase</button>
-         <button className="btn btn-primary mx-1" onClick={handleLoClick}> LowerCase</button>
-         <button className="btn btn-primary mx-1" onClick={handleSeClick}> SentenceCase</button>
-         <button className="btn btn-primary mx-1" onClick={handleCaClick}> CapitalizedCase</button>
-         <button className="btn btn-primary mx-1" onClick={handleAtClick}> aTyicalCase</button>
+         <button className="btn btn-info mx-1" onClick={handleUpClick}> UpperCase</button>
+         <button className="btn btn-info mx-1" onClick={handleLoClick}> LowerCase</button>
+         <button className="btn btn-info mx-1" onClick={handleSeClick}> SentenceCase</button>
+         <button className="btn btn-info mx-1" onClick={handleCaClick}> CapitalizedCase</button>
+         <button className="btn btn-info mx-1" onClick={handleAtClick}> aTyicalCase</button>
 
-         <button className="btn btn-primary mx-1" onClick={handleClClick}>Clear Text</button>       
+         <button className="btn btn-info mx-1" onClick={handleClClick}>Clear Text</button>       
 
          
 
