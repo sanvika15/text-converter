@@ -6,12 +6,15 @@ export default function TextForm(props) {
    // console.log("Uppercase was clicked" + text);
     let newText = text.toUpperCase(); 
     setText(newText)
+    props.showAlert("Converted to uppercase", "success");
   }
 
   const handleLoClick = ()=>{
     // console.log("Uppercase was clicked" + text);
      let newText = text.toLowerCase(); 
      setText(newText)
+     props.showAlert("Converted to lowercase", "success");
+
    }
 
    const handleSeClick = ()=>{
@@ -19,6 +22,8 @@ export default function TextForm(props) {
     let text1= text.toLowerCase()
     let newText = text1.charAt(0).toUpperCase() + text1.slice(1); 
     setText(newText)
+    props.showAlert("Converted to sentence rcase", "success");
+
   }
 
   const handleAtClick = ()=>{
@@ -32,12 +37,16 @@ export default function TextForm(props) {
         }
     }; 
     setText(newText)
+    props.showAlert("Converted to atypical rcase", "success");
+
   }
   const handleCaClick = ()=>{
     //capital case
     let text1 = text.toLowerCase();
     let newText = text1.replace(/\b\w/g, char => char.toUpperCase()); 
     setText(newText)
+    props.showAlert("Converted to capitalized rcase", "success");
+
   }
    const handleClClick = ()=>{
     // clear case
