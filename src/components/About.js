@@ -2,12 +2,6 @@ import React, { useState} from 'react'
 
 export default function About(props) {
 
-//     const[myStyle , setmyStyle] = useState({
-//         color: 'black',
-//         backgroundColor: 'white'
-//    })
-//    const[btntext , setbtntext] = useState("Enable Dark Mode")
-
 let myStyle = {
     color: props.mode ==='dark'?'white':'#042743' ,
     backgroundColor : props.mode === 'dark' ?'rgb(36 74 104)':'white' ,
