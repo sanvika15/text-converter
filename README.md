@@ -24,7 +24,7 @@ A simple and powerful React-based text utility tool that allows users to convert
 
 ## 📸 Screenshots
 
-![Text Converter Preview](https://your-screenshot-url-here.com) <!-- You can upload an image in the repo or replace this with a real link -->
+![Text Converter Preview](preview.png)
 
 ## 📦 Installation
 
