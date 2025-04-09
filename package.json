@@ -2,11 +2,11 @@
   "name": "textutils",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sanvika15.github.io/text-converter",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
@@ -15,6 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -39,7 +41,9 @@
   },
   "description": "This React project is designed to provide comprehensive text manipulation functionalities. It allows users to input text and apply various transformations such as converting to uppercase, lowercase, and sentence case. Additionally, it includes features to count the number of words and characters in the text. The project is structured with a main `App` component that manages the state and logic, and a `TextManipulator` component that handles user interactions and displays results. Users can enter text into an input area and use buttons to perform the desired transformations. The state management in React ensures that the text and its transformations are dynamically updated, providing immediate feedback. The project demonstrates fundamental React concepts such as component-based architecture, state management, and event handling, making it a useful tool for text processing and a solid example of a practical React application.",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  },
   "author": "",
   "license": "ISC"
 }
