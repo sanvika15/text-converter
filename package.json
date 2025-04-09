@@ -36,5 +36,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This React project is designed to provide comprehensive text manipulation functionalities. It allows users to input text and apply various transformations such as converting to uppercase, lowercase, and sentence case. Additionally, it includes features to count the number of words and characters in the text. The project is structured with a main `App` component that manages the state and logic, and a `TextManipulator` component that handles user interactions and displays results. Users can enter text into an input area and use buttons to perform the desired transformations. The state management in React ensures that the text and its transformations are dynamically updated, providing immediate feedback. The project demonstrates fundamental React concepts such as component-based architecture, state management, and event handling, making it a useful tool for text processing and a solid example of a practical React application.",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }
